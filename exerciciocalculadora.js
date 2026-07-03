@@ -1,5 +1,5 @@
 let a = 5
-let b = "dez"
+let b = 10
 
 function soma(a, b) {
     try {
