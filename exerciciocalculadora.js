@@ -1,5 +1,5 @@
-let a = 5
-let b = 10
+let a = 35
+let b = 5
 
 function soma(a, b) {
     try {
@@ -14,6 +14,10 @@ function soma(a, b) {
         console.log("Resultado da soma: " + soma(a, b));
     }
 }
+function processar(parametro1, parametro2, operacao) {
+    return operacao(parametro1, parametro2);
+}
+console.log("Soma: " + processar(a, b, soma));
 
 function subtrai(a, b) {
     try {
@@ -28,6 +32,10 @@ function subtrai(a, b) {
         console.log("Resultado da subtração: " + subtrai(a, b));
     }
 }
+function processar(parametro1, parametro2, operacao) {
+    return operacao(parametro1, parametro2);
+}
+console.log("Subtração: " + processar(a, b, subtrai));
 
 function multiplica(a, b) {
     try {
@@ -42,6 +50,10 @@ function multiplica(a, b) {
         console.log("Resultado da multiplicação: " + multiplica(a, b));
     }
 }
+function processar(parametro1, parametro2, operacao) {
+    return operacao(parametro1, parametro2);
+}
+console.log("Multiplicação: " + processar(a, b, multiplica));
 
 function divide(a, b) {
     try {
@@ -59,3 +71,7 @@ function divide(a, b) {
         console.log("Resultado da divisão: " + divide(a, b));
     }
 }
+function processar(parametro1, parametro2, operacao) {
+    return operacao(parametro1, parametro2);
+}
+console.log("Divisão: " + processar(a, b, divide));
